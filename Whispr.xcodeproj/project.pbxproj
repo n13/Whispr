@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		469A75632D275D3700E51425 /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 469A75622D275D3700E51425 /* WhisperKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		46FCB7D82D2759FC00396167 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469A75632D275D3700E51425 /* WhisperKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Whispr;
 			packageProductDependencies = (
+				469A75622D275D3700E51425 /* WhisperKit */,
 			);
 			productName = Whispr;
 			productReference = 46FCB7C72D2759FA00396167 /* Whispr.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 46FCB7BE2D2759FA00396167;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				46FCB7F42D275A4300396167 /* XCRemoteSwiftPackageReference "WhisperKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 46FCB7C82D2759FA00396167 /* Products */;
 			projectDirPath = "";
@@ -399,6 +408,8 @@
 				DEVELOPMENT_TEAM = FC2EL78J4P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Whispr needs microphone access to transcribe your audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is used to transcribe your audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +439,8 @@
 				DEVELOPMENT_TEAM = FC2EL78J4P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Whispr needs microphone access to transcribe your audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is used to transcribe your audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46FCB7F42D275A4300396167 /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		469A75622D275D3700E51425 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46FCB7F42D275A4300396167 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46FCB7BF2D2759FA00396167 /* Project object */;
 }
